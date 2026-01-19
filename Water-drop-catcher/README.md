@@ -8,3 +8,6 @@ Arcade catcher made with Pygame. Slide a cup to snag falling droplets; standard 
 ## Run
 - Install `pygame` (e.g., `pip install pygame`).
 - Run from anywhere: `python3 main.py` (script now sets its working directory automatically).
+
+## Screenshot
+- `catcher.png`

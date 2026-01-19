@@ -8,3 +8,6 @@ Pygame depth-first/backtracking maze solver. Builds walls from the ASCII map (st
 ## Run
 - Install `pygame` (e.g., `pip install pygame`).
 - Run from anywhere: `python3 main.py` (script now sets its working directory automatically).
+
+## Screenshot
+- `maze.png`

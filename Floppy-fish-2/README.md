@@ -8,3 +8,6 @@ Sequel with space-bar jump controls. Five lives, +1 point per cleared pipes, col
 ## Run
 - Install `pygame` (e.g., `pip install pygame`).
 - Run from anywhere: `python3 main.py` (script now sets its working directory automatically).
+
+## Screenshot
+- `fish2.png`

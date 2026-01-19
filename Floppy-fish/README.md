@@ -8,3 +8,6 @@ Pygame side-scroller where you steer a fish up/down through pipe gaps using W/S 
 ## Run
 - Install `pygame` (e.g., `pip install pygame`).
 - Run from anywhere: `python3 main.py` (script now sets its working directory automatically).
+
+## Screenshot
+- `fish.png`

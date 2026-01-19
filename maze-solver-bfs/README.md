@@ -8,3 +8,6 @@ Breadth-first style maze explorer that tracks branches concurrently. Uses the sa
 ## Run
 - Install `pygame` (e.g., `pip install pygame`).
 - Run from anywhere: `python3 main.py` (script now sets its working directory automatically).
+
+## Screenshot
+- `maze2.png`
