@@ -19,7 +19,7 @@ Old Python projects exported from Replit. This branch keeps the source as-is for
 - `Single-Player-Neo-Pong` — Completion date not recorded — Solo pong versus an AI paddle using the same assets as `Neo-Pong`.
 - `Bubble-sort-visualization` — Completion date not recorded — Pygame visualization highlighting active comparisons with timing and comparison count.
 
-## Screenshots (now included)
+## Screenshots
 - `False-Binary-encoder-with-user-interface/encoder.png`
 - `Floppy-fish/fish.png`
 - `Floppy-fish-2/fish2.png`
