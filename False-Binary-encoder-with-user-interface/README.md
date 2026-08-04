@@ -9,5 +9,9 @@ Tkinter encoder/decoder that shifts ASCII codes by a random offset, reverses and
 - Python 3.8–3.11 with Tkinter (install `python3-tk` on Debian/Ubuntu if needed).
 - From this folder: `python3 main.py`.
 
+## Files
+- `main.py` — the Tkinter version, with message/key fields and encode/decode checkboxes.
+- `main1.py` — the earlier console version driven by `input()` prompts, kept for history.
+
 ## Screenshot
 - `encoder.png`
