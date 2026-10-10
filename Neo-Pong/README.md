@@ -1,13 +1,32 @@
 # Neo Pong
 
 - Language: Python (pygame)
-- Completion date: September 2022
+- Completion date: December 2022
 
-Two-player Pygame pong with sound effects. Paddles on W/S and arrow keys, ball speed increases after paddle hits, and first to 10 points wins. Uses sprites and audio under `images/` and `sounds/`.
+A local two-player Pong game. Players move opposing paddles to return the ball; a missed return awards a point to the other side. The ball speeds up after paddle hits, and the first player to ten points wins.
+
+The game includes a start countdown and sounds for paddle hits, scoring, and the end of a match. The court, paddles, and ball are supplied as game artwork.
+
+## Controls
+
+- Click or press a key on the welcome screen to start.
+- **W / S**: move the left paddle up/down.
+- **Up / Down Arrow**: move the right paddle up/down.
+- Click or press a key on the game-over screen to restart.
 
 ## Run
-- Install `pygame` (e.g., `pip install pygame`).
-- Run from anywhere: `python3 main.py` (script now sets its working directory automatically).
+
+From the repository root:
+
+```sh
+python3.11 -m pip install pygame
+python3.11 Neo-Pong/main.py
+```
+
+Inside this project folder, use `python3.11 main.py` instead. Keep `images/` and `sounds/` alongside the source; the court background is illustrated game artwork, not a blank-color placeholder.
 
 ## Screenshot
-- `pong.png`
+
+![Original Neo Pong court with left and right paddles, a ball, and scores](pong.png)
+
+[Original portfolio entry](https://ericwang-digital-portfolio.pages.dev/computer_science.html#Neo%20pong) · [Archive overview](../README.md)

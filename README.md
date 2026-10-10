@@ -1,32 +1,80 @@
-# Legacy Projects (archived Replit work)
+# Legacy Projects
 
-Old Python projects exported from Replit, kept as-is for reference. This repository is archived and receives no further maintenance. Project code and per-project screenshots are tracked together; each project folder has its own README.
+An archive of early Python projects built on Replit: small games, algorithm visualizations, and a desktop encoding utility. These are old learning projects, preserved for reference rather than active development.
 
-## Quick start
-- Requires Python 3.8–3.11.
-- Most games/visualizers use `pygame`; install with `pip install pygame`.
-- Run `python3 main.py` from anywhere — each pygame script sets its own working directory so relative asset paths resolve.
-- Tkinter apps ship with the standard library on Windows/macOS; Linux may need `sudo apt-get install python3-tk`.
+Each project has its own folder, README, source, and relevant screenshots. Required game artwork and audio stay with the programs that use them; the digital portfolio website itself is not included.
 
-## Project list and completion dates
+## Projects
 
-Listed oldest to newest.
+Completion dates are reproduced from the [original computer science portfolio](https://ericwang-digital-portfolio.pages.dev/computer_science.html), not inferred from Git commits or file modification times.
 
-| Project | Completed | Description | Screenshot |
-| --- | --- | --- | --- |
-| `Water-drop-catcher` | Apr 2022 | Pygame catcher; standard drops are 1 point, golden drops 5, three lives. | `catcher.png` |
-| `Neo-Pong` | Sep 2022 | Two-player Pygame pong with sounds; W/S and arrow keys, first to 10 wins. | `pong.png` |
-| `Floppy-fish` | Dec 2022 | Pygame side-scroller; steer a fish through pipe gaps with W/S or arrows, three lives. | `fish.png` |
-| `Bubble-sort-visualization` | Jan 2023 | Pygame visualization over values 1–250, highlighting the active comparison with timing and comparison count. | — |
-| `False-Binary-encoder-with-user-interface` | Jan 2023 | Tkinter encoder/decoder that shifts ASCII codes, reverses/rotates bits, and uses a two-digit key. | `encoder.png` |
-| `Single-Player-Neo-Pong` | Feb 2023 (approx.) | Solo pong versus an AI paddle, forked from `Neo-Pong` and sharing its assets. | — |
-| `Floppy-fish-2` | Apr 2023 | Sequel with space-bar jump controls and five lives. | `fish2.png` |
-| `maze-solver-dfs` | Apr 2023 | Pygame depth-first/backtracking maze solver visualizer. | `maze.png` |
-| `maze-solver-bfs` | Apr 2023 | Pygame breadth-first style maze explorer. | `maze2.png` |
+| Project | Completed | Description |
+| --- | --- | --- |
+| [Single Player Neo Pong](Single-Player-Neo-Pong/README.md) | February 2022 | Pong against a ball-tracking bot, with increasing ball speed and a ten-point match. |
+| [Water Drop Catcher](Water-drop-catcher/README.md) | April 2022 | Catch falling droplets with a cup; golden drops are worth five points. |
+| [Floppy Fish](Floppy-fish/README.md) | June 2022 | Steer a fish through pipe gaps, with a life counter and changing visual themes. |
+| [False Binary Encoder](False-Binary-encoder-with-user-interface/README.md) | September 2022 | A Tkinter message encoder/decoder using ASCII offsets and bit transformations. |
+| [Neo Pong](Neo-Pong/README.md) | December 2022 | Local two-player Pong with paddle controls, scoring, and sound effects. |
+| [Bubble Sort Visualization](Bubble-sort-visualization/README.md) | January 2023 | Animated adjacent comparisons and swaps, with elapsed time and comparison count. |
+| [Maze Solver — DFS](maze-solver-dfs/README.md) | February 2023 | Depth-first exploration with backtracking and a final solution-path redraw. |
+| [Floppy Fish 2](Floppy-fish-2/README.md) | March 2023 | A jump-controlled sequel with falling motion, five starting lives, and themed sprites. |
+| [Maze Solver — BFS](maze-solver-bfs/README.md) | May 2023 | A breadth-first-style maze exploration visualization with multiple active branches. |
 
-The original Replit export did not preserve timestamps, so dates were reconstructed from a contemporaneous portfolio listing. `Single-Player-Neo-Pong` had no recorded date; it is a fork of `Neo-Pong` (identical assets and `sprites.py`, with the Player 1 paddle replaced by ball-tracking AI), so it necessarily postdates Sep 2022, and Feb 2023 is a best estimate rather than a confirmed date.
+## Run locally
 
-## Notes
-- `False-Binary-encoder-with-user-interface/main1.py` is the earlier console version of the encoder, kept alongside the Tkinter `main.py` it grew into.
-- Files such as `trail.png`, `wall.png`, and `path.png` inside the maze solvers are sprite assets, not screenshots.
-- `Bubble-sort-visualization` and `Single-Player-Neo-Pong` have no screenshot on record.
+The examples use Python 3.11. Install Pygame with the same interpreter you use to run the games and visualizations. From the repository root:
+
+```sh
+python3.11 -m pip install pygame
+python3.11 Floppy-fish/main.py
+```
+
+Replace the project path with any other project's `main.py`; each project README provides its exact command and controls. The Pygame programs resolve their assets relative to their script directories, so keep the supplied artwork and sound files in place.
+
+The False Binary Encoder uses Tkinter instead of Pygame and requires Python 3.11 or newer. Tkinter support depends on the Python installation; check it with `python3.11 -m tkinter`.
+
+```sh
+python3.11 False-Binary-encoder-with-user-interface/main.py
+```
+
+If `python3` already selects Python 3.11, it can replace `python3.11` in these commands. These are archived programs, not a maintained or extensively modernized application suite.
+
+## Screenshots
+
+These are the original portfolio images, stored inside the relevant project folders. Both Pong entries used the same screenshot in the portfolio; that shared historical image is retained here too.
+
+### Single Player Neo Pong
+
+![Historical Pong screenshot used for the single-player portfolio entry](Single-Player-Neo-Pong/pong.png)
+
+### Water Drop Catcher
+
+![Cup catching a falling water droplet beneath clouds](Water-drop-catcher/catcher.png)
+
+### Floppy Fish
+
+![Fish navigating a gap between orange pipes](Floppy-fish/fish.png)
+
+### False Binary Encoder
+
+![Tkinter interface encoding an example message into a binary string](False-Binary-encoder-with-user-interface/encoder.png)
+
+### Neo Pong
+
+![Two-player Pong court with paddles, ball, and scores](Neo-Pong/pong.png)
+
+### Bubble Sort Visualization
+
+![Bubble sort in progress with bars, comparison count, and elapsed time](Bubble-sort-visualization/sort.png)
+
+### Maze Solver — DFS
+
+![Depth-first maze visualization with the maze solved message](maze-solver-dfs/maze.png)
+
+### Floppy Fish 2
+
+![Jump-controlled fish game with pipe gaps and five starting lives](Floppy-fish-2/fish2.png)
+
+### Maze Solver — BFS
+
+![Breadth-first-style maze visualization with explored cells and maze solved message](maze-solver-bfs/maze2.png)
